@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="meta utf-8" id="viewport" name="viewport" content="widht=device, user-scalable=no">
+    <title>formulario</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <form action="login.html" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Informações</legend>
+            <label> Nome Completo: <br>
+                <input type="text" name="name" required/>
+            </label> <br>
+            <label> Foto:<br>
+                <input type="file" name="photo" accept="image/*"/>
+            </label> <br>
+            <label> Email <br>
+                <input type="email" name="email" required/>
+            </label> <br>
+            <label> Telefone 1: <br>
+                <input type="number" name="phone" required/>
+            </label> <br>
+            <label> Telfone 2: <br>
+                <input type="number" name="phonetwo" required/>
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Habilidades</legend>
+            <label>
+                Selecione, dentre as habilidades listadas, em quais você se encaixa <br>
+                <select name="atributos" required>
+                    <option value="one">Comunicativo(a)</option>
+                    <option value="two">Simpático(a)</option>
+                    <option value="tree">Organizado(a)</option>
+                    <option value="four">Multitarefas</option>
+                    <option value="five">Domina a área de internet</option>
+                    <option value="six">Pontual</option>
+                </select>
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Trabalhos Complementares</legend>
+            <label>Empresa: <br>
+                <input type="text" name="company" required/>
+            </label><br>
+            <label> Cargo: <br>
+                <input type="text" name="companyjob" required/>
+            </label><br>
+            <label>Tempo de Trabalho<br>
+                <input type="date" name="timejob" required/>
+            </label><br>
+            <label>Descreva sua importância para empresa trabalhada: <br>
+                <textarea name="desricions" required></textarea>
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Formação</legend>
+            <i>Leve em conta sua última formação </i><br>
+            <label>Nome: <br>
+                <input type="text" name="study" required/>
+            </label><br>
+            <label>Data: <br>
+                <input type="date" name="studytime" required/>
+            </label><br>
+            <label>Diga o quão útil sua formação é: <br>
+                <textarea name="studydescricion" required></textarea>
+            </label><br>
+        </fieldset>
+        <fieldset>
+            <legend>Perfil Pessoal</legend>
+            <label>Liste 5 qualidades: <br>
+                <textarea name="good" required></textarea>
+            </label><br>
+            <label>Liste 5 defeitos: <br>
+                <textarea name="bad" required></textarea>
+            </label><br>
+            <label>Fale sobre você <br>
+               <textarea name="talkyou" required></textarea>
+            </label><br>
+        </fieldset>
+        <button>Enviar</button>
+    </form>
+</body>
+</html>
+
